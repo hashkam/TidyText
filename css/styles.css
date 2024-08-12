@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #343a40;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #343a40;
+}
+
+label {
+    font-weight: 600;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Container to center and style the form group */
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    font-family: Arial, sans-serif;
+}
+
+/* Hide the default checkbox */
+#livePreviewToggle {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 1px;
+    margin-bottom: 5px;
+}
+
+/* Toggle's circle */
+#livePreviewToggle::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+/* Checked state - On */
+#livePreviewToggle:checked {
+    background-color: #007bff;
+}
+
+/* Move the circle to the right when checked */
+#livePreviewToggle:checked::before {
+    transform: translateX(20px);
+}
+
+/* Label styling */
+.form-label {
+    margin-right: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #343a40;
+    cursor: pointer;
+}
+
+/* Add a bit of spacing between the label and the toggle */
+.form-group {
+    margin-top: 10px;
+}
+
+
