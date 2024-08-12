@@ -1,0 +1,2 @@
+# TidyText
+A text formatter
